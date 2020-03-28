@@ -34,10 +34,10 @@ If you do not want this behaviour and want to keep the server running, modify [u
 
 ### SSH Key
 
-In case you want to access the created server with a different ssh key from `~/.ssh/id_rsa.pub` (or if you are using a different location), modify `variables.tf` or add a line in `secrets.tfvars` with:
+In case you want to access the created server copy the contents of your public ssh key (Usually stored at `~/.ssh/id_rsa.pub`) in `secrets.tfvars` adding a line that looks like:
 
 ```
-ssh_key_location = "/path/to/my/public_key.pub"
+ssh_key = "MY_PUBLIC_SSH_KEY_CONTENT"
 ```
 
 ### Server location

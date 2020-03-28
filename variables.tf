@@ -16,8 +16,7 @@ variable "location" {
   default     = "nbg1"
 }
 
-variable "ssh_key_location" {
+variable "ssh_key" {
   type = string
-  description = "The location of your ssh key"
-  default = "~/.ssh/id_rsa.pub"
+  description = "Your ssh key"
 }

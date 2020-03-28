@@ -1,6 +1,6 @@
 resource "hcloud_ssh_key" "access" {
   name       = "access"
-  public_key = file(var.ssh_key_location)
+  public_key = var.ssh_key
 }
 
 resource "hcloud_server" "wireguard" {
